@@ -472,6 +472,7 @@ textarea {
 
 .footer-form {
     display: flex;
+    gap: 24px;
 }
 
 .form-text{
@@ -489,11 +490,12 @@ textarea {
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #2e2f42;
+    background-color: transparent;
     margin-right: 24px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #FFFFFF;
     padding-left: 16px;
+    letter-spacing: 0.04em;
 }
 
 .form-label {
@@ -506,19 +508,25 @@ textarea {
 .footer-btn {
     display: flex;
     border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    gap: 16px;
     margin: auto;
     color: #fff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-btn {
+    margin-left: 16px;
 }
 
 .form-input::placeholder {
