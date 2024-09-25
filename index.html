@@ -429,6 +429,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
+
         <div class="footer-social-media">
           <p class="social-media-text">Social media</p>
           <ul class="social-list social">
@@ -462,7 +463,116 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form-container">
+          <p class="form-text">Subscribe</p>
+          <form class="footer-form">
+            <label class="form-label">
+              <input
+                class="form-input"
+                name="footer-email"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-social-fill" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="btn-close-modal" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-name">Leave your contacts and we will call you back</p>
+        <form class="form-modal" name="issue_report_form">
+          <div>
+            <label class="label-modal" for="username">Name</label>
+            <div class="modal-input-svg">
+              <input
+                id="username"
+                type="text"
+                class="form-input-modal"
+                name="username"
+                required
+              />
+              <svg class="person-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <label class="label-modal" for="tel">Phone</label>
+            <div class="modal-input-svg">
+              <input
+                id="tel"
+                type="tel"
+                class="form-input-modal"
+                name="tel"
+                required
+              />
+              <svg class="phone-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <label class="label-modal" for="email">Email</label>
+            <div class="modal-input-svg">
+              <input
+                id="email"
+                type="email"
+                class="form-input-modal"
+                name="email"
+                required
+              />
+              <svg class="email-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <label class="label-modal" for="comment">Comment</label>
+
+            <textarea
+              class="form-textarea-modal"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="privacy-container">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="privacy-acception"
+              id="privacy-acception"
+              required
+            />
+            <label class="label-checkbox" for="privacy-acception">
+              <span class="castom-checkbox">
+                <svg class="castom-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              <p class="privacy-text">
+                I accept the terms and conditions of the
+                <a class="link-privacy" href="#">Privacy Policy</a>
+              </p>
+            </label>
+          </div>
+          <button class="page-main-button btn-modal" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
