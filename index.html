@@ -495,22 +495,22 @@
         </button>
         <p class="modal-name">Leave your contacts and we will call you back</p>
         <form class="form-modal" name="issue_report_form">
-          <div>
-            <label class="label-modal" for="username">Name</label>
+          <div class="div-in-form">
+            <label class="label-modal" for="user-name">Name</label>
             <div class="modal-input-svg">
               <input
-                id="username"
+                id="user-name"
                 type="text"
                 class="form-input-modal"
                 name="username"
                 required
               />
-              <svg class="person-icon" width="18" height="18">
+              <svg class="person-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-          <div>
+          <div class="div-in-form">
             <label class="label-modal" for="tel">Phone</label>
             <div class="modal-input-svg">
               <input
@@ -525,7 +525,7 @@
               </svg>
             </div>
           </div>
-          <div>
+          <div class="div-in-form">
             <label class="label-modal" for="email">Email</label>
             <div class="modal-input-svg">
               <input
@@ -540,25 +540,26 @@
               </svg>
             </div>
           </div>
-          <div>
-            <label class="label-modal" for="comment">Comment</label>
+          <div class="div-textarea">
+            <label class="label-modal" for="user-comment">Comment</label>
 
             <textarea
               class="form-textarea-modal"
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="privacy-container">
             <input
-              class="visually-hidden"
+              value="true"
+              class="textarea-input visually-hidden"
               type="checkbox"
-              name="privacy-acception"
-              id="privacy-acception"
+              name="user-privacy"
+              id="user-privacy"
               required
             />
-            <label class="label-checkbox privacy-text" for="privacy-acception">
+            <label class="label-checkbox privacy-text" for="user-privacy">
               <span class="castom-checkbox">
                 <svg class="castom-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
