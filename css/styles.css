@@ -677,25 +677,8 @@ textarea {
     position: relative;
     
 }
-.icon {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    fill: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .icon-modal {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    fill: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon {
     position: absolute;
     top: 50%;
     left: 16px;
@@ -712,11 +695,8 @@ textarea {
     border-color: #4D5AE5;
 }
 
-.form-input-modal:focus-within+.person-icon,
-.form-input-modal:focus-within+.phone-icon,
-.form-input-modal:focus-within+.email-icon {
+.form-input-modal:focus-within+.icon-modal {
     fill: #4D5AE5;
-    
 }
 
 .div-textarea {
